@@ -1,0 +1,25 @@
+@import '@netcracker/ux-ng2/assets/styles/common/typography/typography.mixins.less';
+
+.app {
+    padding: 24px;
+
+    &__title {
+        margin-bottom: 12px;
+        .ux-typography-32px-semibold();
+    }
+
+    &__subtitle {
+        margin: 24px 0 12px;
+        .ux-typography-24px-semibold();
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        fill: #0066cc;
+
+        & + & {
+            margin-left: 12px;
+        }
+    }
+}

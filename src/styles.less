@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/styles/common/index.less';
+
+/*
+This syntax works because in angular.json options we set:
+    "stylePreprocessorOptions": {
+        "includePaths": ["node_modules/"]
+    }
+
+Otherwise, you would need to import styles by the path:
+/node_modules/@netcracker/ux-ng2/assets/styles/components/button/button.component.less
+*/
+@import '@netcracker/ux-ng2/assets/styles/components/button/button.component.less';
+
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/table/table.component.css';
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/field/checkbox/checkbox-field.component.css';
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/field/text/text-field.component.css';
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/field/dropdown/dropdown-field.component.css';
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/field/date/date-field.component.css';
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/field/reference/reference-field.component.css';
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/toolbar/toolbar.component.css';
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/toolbar/parts/toolbar-left.component.css';
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/toolbar/parts/toolbar-right.component.css';
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/button/button.component.css';
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/button/multiple-button/multiple-button.component.css';
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/skeleton/skeleton.component.css';
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/popover/popover.component.css';
+@import (inline) '@netcracker/ux-ng2/assets/styles/components/virtual-scroll.css';
+
+// You could alternatively import all ux-ng2 styles like this:
+// @import '@netcracker/ux-ng2/assets/styles/main.less';
