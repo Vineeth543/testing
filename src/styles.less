@@ -1,15 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import './assets/styles/common/index.less';
-
-/*
-This syntax works because in angular.json options we set:
-    "stylePreprocessorOptions": {
-        "includePaths": ["node_modules/"]
-    }
-
-Otherwise, you would need to import styles by the path:
-/node_modules/@netcracker/ux-ng2/assets/styles/components/button/button.component.less
-*/
 @import '@netcracker/ux-ng2/assets/styles/components/button/button.component.less';
 
 @import (inline) '@netcracker/ux-ng2/assets/styles/components/table/table.component.css';
@@ -27,5 +20,8 @@ Otherwise, you would need to import styles by the path:
 @import (inline) '@netcracker/ux-ng2/assets/styles/components/popover/popover.component.css';
 @import (inline) '@netcracker/ux-ng2/assets/styles/components/virtual-scroll.css';
 
-// You could alternatively import all ux-ng2 styles like this:
-// @import '@netcracker/ux-ng2/assets/styles/main.less';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
